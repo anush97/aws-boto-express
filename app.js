@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const multer = require('multer');
 const fs = require('fs');
@@ -10,8 +11,11 @@ const upload = multer({ dest: 'uploads/' });
 const arr =[]
 // Configure the AWS SDK
 AWS.config.update({
-  region: 'us-east-1',
+  /* accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY, */
+  region: process.env.AWS_REGION,
 });
+
 
 // Define an endpoint to upload an image
 app.post('/upload', upload.single('image'), (req, res) => {

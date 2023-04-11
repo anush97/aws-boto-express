@@ -1,0 +1,13 @@
+# .gitignore
+
+# Ignore node_modules
+node_modules/
+
+# Ignore Python virtual environment
+venv/
+
+# Ignore local uploads
+uploads/
+
+# Ignore environment variables and secrets
+.env
