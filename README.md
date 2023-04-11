@@ -18,7 +18,7 @@ A simple and efficient driver licence reader implemented in Python. This reposit
 
 1. Clone the repository:
 2. Install the required dependencies:
-pip install -r requirements.txt
+npm install
 
 ## Usage
 
@@ -33,8 +33,6 @@ from driver_licence_reader import DriverLicenceReader``
 ``licence_data = reader.read('path/to/driver_licence_image.jpg')
 print(licence_data)``
 
-## Contributing
-Contributions are welcome! Please read the CONTRIBUTING.md file for details on how to contribute to this project.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
